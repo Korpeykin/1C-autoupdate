@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<v8u:updateList version="1.1"
+    xmlns:v8u="http://v8.1c.ru/configuration-updates">
+    <v8u:date>{{date}}</v8u:date>
+    {{# xml}}
+    <v8u:update configuration="{{conf_name}}">
+        <v8u:vendor>{{provider_name}}</v8u:vendor>
+        <v8u:file>{{update_file_path}}</v8u:file>
+        <v8u:size>{{update_file_size}}</v8u:size>
+        <v8u:version>{{konf_version}}</v8u:version>
+        {{# konf_version_from}}
+            <v8u:target>{{target}}</v8u:target>
+        {{/ konf_version_from}}
+    </v8u:update>
+    {{/ xml}}
+</v8u:updateList>
